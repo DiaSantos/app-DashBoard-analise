@@ -10,7 +10,7 @@ st.set_page_config(
 )
 
 # --- Carregamento de dados ---
-df = pd.read_csv(r"C:\Users\DANIEL\Downloads\dataScience_analisys_appDash\dados-cargos-e-salarios.csv")
+df = pd.read_csv("dados-cargos-e-salarios.csv")
 
 # --- Barra Lateral (Filtros) ---
 st.sidebar.header("🔍 Filtros")
@@ -155,3 +155,4 @@ with col_graf4:
 # --- Tabela de Dados Detalhados ---
 st.subheader("📋 Dados Detalhados")
 st.dataframe(df_filtrado)
+
